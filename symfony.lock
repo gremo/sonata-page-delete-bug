@@ -109,6 +109,9 @@
             "ref": "30dba2f9b719f21b497a6302f41aac07f9079e13"
         }
     },
+    "sonata-project/user-bundle": {
+        "version": "5.9.0"
+    },
     "squizlabs/php_codesniffer": {
         "version": "3.7",
         "recipe": {

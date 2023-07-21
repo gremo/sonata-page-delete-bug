@@ -4,14 +4,27 @@ security:
         Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
     # https://symfony.com/doc/current/security.html#loading-the-user-the-user-provider
     providers:
-        users_in_memory: { memory: null }
+        sonata_user_bundle: { id: sonata.user.security.user_provider }
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
+        admin:
+            lazy: true
+            pattern: /admin(.*)
+            provider: sonata_user_bundle
+            form_login:
+                check_path: sonata_user_admin_security_check
+                login_path: sonata_user_admin_security_login
+                default_target_path: sonata_admin_dashboard
+                use_referer: true
+            logout:
+                path: sonata_user_admin_security_logout
+                target: sonata_user_admin_security_login
+            remember_me:
+                secret: '%kernel.secret%'
         main:
             lazy: true
-            provider: users_in_memory
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#the-firewall
@@ -24,6 +37,9 @@ security:
     access_control:
         # - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }
+        - { path: ^/admin/(login|login_check|logout$)$, role: PUBLIC_ACCESS }
+        - { path: ^/admin/(request|check-email|reset), role: PUBLIC_ACCESS }
+        - { path: ^/admin/, role: ROLE_ADMIN }
 
     role_hierarchy:
         ROLE_ADMIN: [ROLE_USER]

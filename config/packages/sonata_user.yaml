@@ -1,0 +1,20 @@
+sonata_user:
+    class:
+        user: App\Entity\User
+
+    resetting:
+        email:
+            address: no-reply@localhost
+            sender_name: IOcms
+
+    profile:
+        default_avatar: img/admin-avatar.png
+
+sonata_admin:
+    dashboard:
+        groups:
+            security:
+                icon: fa fa-shield
+                label: admin.group_security
+                items:
+                    - sonata.user.admin.user
