@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3349c3db01e7c53cbe450de390cc5c5",
+    "content-hash": "b18b3e95e7fba474bd1831bd9dd7835c",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -54,6 +54,80 @@
                 "source": "https://github.com/Behat/Transliterator/tree/v1.5.0"
             },
             "time": "2022-03-30T09:27:43+00:00"
+        },
+        {
+            "name": "cocur/slugify",
+            "version": "v4.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cocur/slugify.git",
+                "reference": "652234ef5f1be844a2ae1c36ad1b4c88b05160f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/652234ef5f1be844a2ae1c36ad1b4c88b05160f9",
+                "reference": "652234ef5f1be844a2ae1c36ad1b4c88b05160f9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^7.1 || ~8.0.0 || ~8.1.0 || ~8.2.0"
+            },
+            "conflict": {
+                "symfony/config": "<3.4 || >=4,<4.3",
+                "symfony/dependency-injection": "<3.4 || >=4,<4.3",
+                "symfony/http-kernel": "<3.4 || >=4,<4.3",
+                "twig/twig": "<2.12.1"
+            },
+            "require-dev": {
+                "laravel/framework": "^5.0|^6.0|^7.0|^8.0",
+                "latte/latte": "~2.2",
+                "league/container": "^2.2.0",
+                "mikey179/vfsstream": "~1.6.8",
+                "mockery/mockery": "^1.3",
+                "nette/di": "~2.4",
+                "pimple/pimple": "~1.1",
+                "plumphp/plum": "~0.1",
+                "symfony/config": "^3.4 || ^4.3 || ^5.0 || ^6.0",
+                "symfony/dependency-injection": "^3.4 || ^4.3 || ^5.0 || ^6.0",
+                "symfony/http-kernel": "^3.4 || ^4.3 || ^5.0 || ^6.0",
+                "symfony/phpunit-bridge": "^5.4 || ^6.0",
+                "twig/twig": "^2.12.1 || ~3.0",
+                "zendframework/zend-modulemanager": "~2.2",
+                "zendframework/zend-servicemanager": "~2.2",
+                "zendframework/zend-view": "~2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cocur\\Slugify\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Eckerstorfer",
+                    "email": "florian@eckerstorfer.co",
+                    "homepage": "https://florian.ec"
+                },
+                {
+                    "name": "Ivo Bathke",
+                    "email": "ivo.bathke@gmail.com"
+                }
+            ],
+            "description": "Converts a string into a slug.",
+            "keywords": [
+                "slug",
+                "slugify"
+            ],
+            "support": {
+                "issues": "https://github.com/cocur/slugify/issues",
+                "source": "https://github.com/cocur/slugify/tree/v4.3.0"
+            },
+            "time": "2022-12-07T19:48:48+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -3046,6 +3120,230 @@
             "time": "2023-07-08T15:39:09+00:00"
         },
         {
+            "name": "sonata-project/page-bundle",
+            "version": "4.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sonata-project/SonataPageBundle.git",
+                "reference": "3149d8279e1b6c3a4e0b11adc06619b00d8abb7c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sonata-project/SonataPageBundle/zipball/3149d8279e1b6c3a4e0b11adc06619b00d8abb7c",
+                "reference": "3149d8279e1b6c3a4e0b11adc06619b00d8abb7c",
+                "shasum": ""
+            },
+            "require": {
+                "cocur/slugify": "^4.0",
+                "doctrine/doctrine-bundle": "^2.7",
+                "doctrine/persistence": "^3.0.2",
+                "php": "^8.0",
+                "sonata-project/admin-bundle": "^4.19",
+                "sonata-project/block-bundle": "^4.18 || ^5.0",
+                "sonata-project/doctrine-extensions": "^1.18 || ^2.1",
+                "sonata-project/doctrine-orm-admin-bundle": "^4.0",
+                "sonata-project/form-extensions": "^1.4 || ^2.0",
+                "sonata-project/seo-bundle": "^3.4",
+                "sonata-project/twig-extensions": "^1.3 || ^2.0",
+                "symfony-cmf/routing-bundle": "^2.1 || ^3.0",
+                "symfony/config": "^5.4 || ^6.2",
+                "symfony/console": "^5.4 || ^6.2",
+                "symfony/dependency-injection": "^5.4 || ^6.2",
+                "symfony/form": "^5.4 || ^6.2",
+                "symfony/framework-bundle": "^5.4 || ^6.2",
+                "symfony/http-foundation": "^5.4 || ^6.2",
+                "symfony/http-kernel": "^5.4 || ^6.2",
+                "symfony/intl": "^5.4 || ^6.2",
+                "symfony/options-resolver": "^5.4 || ^6.2",
+                "symfony/process": "^5.4 || ^6.2",
+                "symfony/routing": "^5.4 || ^6.2",
+                "symfony/security-core": "^5.4 || ^6.2",
+                "symfony/security-http": "^5.4 || ^6.2",
+                "symfony/serializer": "^5.4 || ^6.2",
+                "symfony/validator": "^5.4 || ^6.2",
+                "twig/string-extra": "^3.0",
+                "twig/twig": "^3.0"
+            },
+            "conflict": {
+                "doctrine/dbal": "<3.4",
+                "doctrine/orm": "<2.14"
+            },
+            "require-dev": {
+                "dama/doctrine-test-bundle": "^7.0",
+                "friendsofphp/php-cs-fixer": "^3.4",
+                "masterminds/html5": "^2.7",
+                "matthiasnoback/symfony-dependency-injection-test": "^4.1.1",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.3",
+                "phpstan/phpstan-symfony": "^1.0",
+                "phpunit/phpunit": "^9.5",
+                "psalm/plugin-phpunit": "^0.18",
+                "psalm/plugin-symfony": "^5.0",
+                "rector/rector": "^0.17",
+                "symfony/browser-kit": "^5.4 || ^6.2",
+                "symfony/css-selector": "^5.4 || ^6.2",
+                "symfony/filesystem": "^5.4 || ^6.2",
+                "symfony/panther": "^2.0.1",
+                "symfony/phpunit-bridge": "^6.2",
+                "symfony/yaml": "^5.4 || ^6.2",
+                "vimeo/psalm": "^5.0"
+            },
+            "suggest": {
+                "twig/extra-bundle": "Auto configures the Twig Intl extension"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Sonata\\PageBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@sonata-project.org",
+                    "homepage": "https://sonata-project.org"
+                },
+                {
+                    "name": "Sonata Community",
+                    "homepage": "https://github.com/sonata-project/SonataPageBundle/contributors"
+                }
+            ],
+            "description": "This bundle provides a Site and Page management through container and block services",
+            "homepage": "https://docs.sonata-project.org/projects/SonataPageBundle",
+            "keywords": [
+                "cms",
+                "page",
+                "sonata"
+            ],
+            "support": {
+                "issues": "https://github.com/sonata-project/SonataPageBundle/issues",
+                "source": "https://github.com/sonata-project/SonataPageBundle/tree/4.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/OskarStark",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/core23",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/greg0ire",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/jordisala1991",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-06-04T08:02:41+00:00"
+        },
+        {
+            "name": "sonata-project/seo-bundle",
+            "version": "3.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sonata-project/SonataSeoBundle.git",
+                "reference": "86775e019853ad29825a6dd406f5f41a710bebcc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sonata-project/SonataSeoBundle/zipball/86775e019853ad29825a6dd406f5f41a710bebcc",
+                "reference": "86775e019853ad29825a6dd406f5f41a710bebcc",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^8.0",
+                "sonata-project/block-bundle": "^4.18 || ^5.0",
+                "sonata-project/exporter": "^2.0 || ^3.0",
+                "symfony/config": "^5.4 || ^6.2",
+                "symfony/dependency-injection": "^5.4 || ^6.2",
+                "symfony/form": "^5.4 || ^6.2",
+                "symfony/framework-bundle": "^5.4 || ^6.2",
+                "symfony/http-foundation": "^5.4 || ^6.2",
+                "symfony/http-kernel": "^5.4 || ^6.2",
+                "symfony/options-resolver": "^5.4 || ^6.2",
+                "twig/twig": "^3.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.4",
+                "knplabs/knp-menu": "^3.0",
+                "knplabs/knp-menu-bundle": "^3.0",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.0",
+                "phpstan/phpstan-symfony": "^1.0",
+                "phpunit/phpunit": "^9.5",
+                "psalm/plugin-phpunit": "^0.18",
+                "rector/rector": "^0.16",
+                "symfony/console": "^5.4 || ^6.2",
+                "symfony/filesystem": "^5.4 || ^6.2",
+                "symfony/finder": "^5.4 || ^6.2",
+                "symfony/phpunit-bridge": "^6.2",
+                "symfony/yaml": "^5.4 || ^6.2",
+                "vimeo/psalm": "^5.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Sonata\\SeoBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@sonata-project.org",
+                    "homepage": "https://sonata-project.org"
+                },
+                {
+                    "name": "Sonata Community",
+                    "homepage": "https://github.com/sonata-project/SonataSeoBundle/contributors"
+                }
+            ],
+            "description": "Symfony SonataSeoBundle",
+            "homepage": "https://docs.sonata-project.org/projects/SonataSeoBundle",
+            "keywords": [
+                "seo",
+                "sonata"
+            ],
+            "support": {
+                "issues": "https://github.com/sonata-project/SonataSeoBundle/issues",
+                "source": "https://github.com/sonata-project/SonataSeoBundle/tree/3.7.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/VincentLanglet",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/core23",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/greg0ire",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/jordisala1991",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-06-04T07:51:34+00:00"
+        },
+        {
             "name": "sonata-project/twig-extensions",
             "version": "2.1.0",
             "source": {
@@ -3345,6 +3643,152 @@
                 "source": "https://github.com/stof/StofDoctrineExtensionsBundle/tree/v1.8.0"
             },
             "time": "2023-07-07T15:34:33+00:00"
+        },
+        {
+            "name": "symfony-cmf/routing",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony-cmf/Routing.git",
+                "reference": "59a811cc2fa4825b1ff87f5a0d83778148f877db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/59a811cc2fa4825b1ff87f5a0d83778148f877db",
+                "reference": "59a811cc2fa4825b1ff87f5a0d83778148f877db",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0",
+                "psr/log": "^1.0 || ^2.0 || ^3.0",
+                "symfony/http-kernel": "^6.0",
+                "symfony/routing": "^6.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.5",
+                "symfony/config": "^6.0",
+                "symfony/dependency-injection": "^6.0",
+                "symfony/event-dispatcher": "^6.0",
+                "symfony/phpunit-bridge": "^6.0"
+            },
+            "suggest": {
+                "symfony/event-dispatcher": "DynamicRouter can optionally trigger an event at the start of matching. Minimal version ^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Cmf\\Component\\Routing\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony CMF Community",
+                    "homepage": "https://github.com/symfony-cmf/Routing/contributors"
+                }
+            ],
+            "description": "Extends the Symfony routing component for dynamic routes and chaining several routers",
+            "homepage": "http://cmf.symfony.com",
+            "keywords": [
+                "database",
+                "routing"
+            ],
+            "support": {
+                "issues": "https://github.com/symfony-cmf/Routing/issues",
+                "source": "https://github.com/symfony-cmf/Routing/tree/3.0.1"
+            },
+            "time": "2022-07-04T07:08:15+00:00"
+        },
+        {
+            "name": "symfony-cmf/routing-bundle",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony-cmf/routing-bundle.git",
+                "reference": "e90e86175d4640be33d252645cfd57439d8902ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony-cmf/routing-bundle/zipball/e90e86175d4640be33d252645cfd57439d8902ad",
+                "reference": "e90e86175d4640be33d252645cfd57439d8902ad",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0",
+                "symfony-cmf/routing": "^3.0",
+                "symfony/framework-bundle": "^6.0"
+            },
+            "conflict": {
+                "doctrine/common": "<3.1.1",
+                "doctrine/persistence": "<1.3.0",
+                "doctrine/phpcr-odm": "<1.4",
+                "phpunit/phpunit": "<6"
+            },
+            "require-dev": {
+                "doctrine/data-fixtures": "^1.0.0",
+                "doctrine/doctrine-bundle": "^2.0",
+                "doctrine/orm": "^2.9",
+                "doctrine/phpcr-bundle": "^2.3",
+                "doctrine/phpcr-odm": "^1.4|^2.0",
+                "jackalope/jackalope-doctrine-dbal": "^1.3",
+                "matthiasnoback/symfony-config-test": "^4.1.0",
+                "matthiasnoback/symfony-dependency-injection-test": "^4.1.0",
+                "symfony-cmf/testing": "dev-master as 4.2.0",
+                "symfony/form": "^6.0",
+                "symfony/monolog-bundle": "^3.5",
+                "symfony/phpunit-bridge": "^6.0",
+                "symfony/security-bundle": "^6.0",
+                "symfony/serializer": "^6.0",
+                "symfony/translation": "^6.0",
+                "symfony/twig-bundle": "^6.0",
+                "symfony/validator": "^6.0",
+                "twig/twig": "^2.4.4 || ^3.0"
+            },
+            "suggest": {
+                "doctrine/orm": "To enable support for the ORM entities (^2.5)",
+                "doctrine/phpcr-bundle": "To enable support for the PHPCR ODM documents",
+                "doctrine/phpcr-odm": "To enable support for the PHPCR ODM documents (^1.4)"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Cmf\\Bundle\\RoutingBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony CMF Community",
+                    "homepage": "https://github.com/symfony-cmf/RoutingBundle/contributors"
+                }
+            ],
+            "description": "Symfony RoutingBundle",
+            "homepage": "http://cmf.symfony.com",
+            "keywords": [
+                "database",
+                "routing"
+            ],
+            "support": {
+                "issues": "https://github.com/symfony-cmf/routing-bundle/issues",
+                "source": "https://github.com/symfony-cmf/routing-bundle/tree/3.0.2"
+            },
+            "time": "2023-06-03T15:52:53+00:00"
         },
         {
             "name": "symfony/asset",

@@ -1,0 +1,70 @@
+sonata_page:
+    skip_redirection: true
+    hide_disabled_blocks: true
+    multisite: host
+
+    router_auto_register:
+        enabled: true
+
+    ignore_route_patterns:
+        - ^_(.*)
+        - ^sonata_page_exceptions(.*)
+    ignore_uri_patterns:
+        - ^/admin\/
+
+    default_template: default
+    templates:
+        default:
+            path: layout/default.html.twig
+            name: Predefinito
+            containers:
+                header:
+                    name: header
+                content:
+                    name: content
+                footer:
+                    name: footer
+            matrix:
+                layout: |
+                    HHHHHHHH
+                    HHHHHHHH
+                    CCCCCCCC
+                    CCCCCCCC
+                    CCCCCCCC
+                    FFFFFFFF
+                    FFFFFFFF
+                mapping:
+                    H: header
+                    C: content
+                    F: footer
+
+    catch_exceptions:
+        not_found: [404]
+        fatal: [500]
+
+    direct_publication: true
+
+sonata_block:
+    default_contexts: [sonata_page_bundle]
+
+sonata_admin:
+    assets:
+        extra_javascripts:
+            - bundles/sonatapage/app.js
+        extra_stylesheets:
+            - bundles/sonatapage/app.css
+
+    dashboard:
+        groups:
+            cms:
+                icon: fa fa-pencil
+                label: admin.group_cms
+                keep_open: true
+                items:
+                    - sonata.page.admin.page
+                    - sonata.page.admin.shared_block
+            advanced:
+                icon: fa fa-cog
+                label: admin.group_advanced
+                items:
+                    - sonata.page.admin.site

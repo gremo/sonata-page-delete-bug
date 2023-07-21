@@ -1,2 +1,4 @@
 admin:
+    group_advanced: Avanzate
+    group_cms: CMS
     group_security: Sicurezza

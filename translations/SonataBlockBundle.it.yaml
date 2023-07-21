@@ -1,0 +1,9 @@
+# TODO rimuovere questo file dopo https://github.com/sonata-project/SonataBlockBundle/pull/1187
+sonata:
+    block:
+        service:
+            container: Container
+            menu: Menu
+            rss: Feed RSS
+            template: Template
+            text: Testo semplice

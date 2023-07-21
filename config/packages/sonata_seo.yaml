@@ -1,0 +1,9 @@
+sonata_seo:
+    page:
+        metas:
+            charset:
+                utf-8: ''
+            http-equiv:
+                'X-UA-Compatible': ie=edge
+            name:
+                viewport: width=device-width, initial-scale=1, shrink-to-fit=no

@@ -21,4 +21,7 @@ return [
     Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle::class => ['all' => true],
     Sonata\UserBundle\SonataUserBundle::class => ['all' => true],
     Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle::class => ['all' => true],
+    Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle::class => ['all' => true],
+    Sonata\SeoBundle\SonataSeoBundle::class => ['all' => true],
+    Sonata\PageBundle\SonataPageBundle::class => ['all' => true],
 ];
