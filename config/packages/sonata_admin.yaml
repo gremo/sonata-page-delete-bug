@@ -1,8 +1,31 @@
 sonata_admin:
-    title: 'Sonata Admin'
+    security:
+        handler: sonata.admin.security.handler.role
+        role_admin: ROLE_ADMIN
+        role_super_admin: ROLE_SUPER_ADMIN
+
+    title: IOcms
+    title_logo: img/admin-logo.png
+
+    global_search:
+        admin_route: edit
+
+    breadcrumbs:
+        child_admin_route: edit
+
+    options:
+        html5_validate: false
+        pager_links: 3
+        default_admin_route: edit
+        default_group: cms
+        default_translation_domain: admin
+        list_action_button_content: icon
+
     dashboard:
         blocks:
             - { type: sonata.admin.block.admin_list, position: left }
+
+    show_mosaic_button: false
 
 sonata_block:
     blocks:
